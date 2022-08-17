@@ -1,0 +1,111 @@
+body {
+  width: 17.5em;
+  margin: 4% auto;
+  font-family: 'Source Sans Pro', sans-serif;
+  letter-spacing: 5px;
+  font-size: 1.8rem;
+  background-color: #000000;
+}
+
+.calculadora {
+  padding: 20px;
+  -webkit-box-shadow: 0px 10px 40px 10px rgba(10, 10, 10, 10);
+  box-shadow: 2px 2px 10px 20px rgba(202, 200, 200, 0.2);
+  border-radius: 10px;
+}
+
+.input {
+  border: 1px solid rgb(255, 255, 255);
+  color: white;
+  border-radius: 1px;
+  height: 60px;
+  padding-right: 15px;
+  padding-top: 10px;
+  text-align: right;
+  margin-right: 6px;
+  font-size: 2.5rem;
+  overflow-x: auto;
+  transition: all .2s ease-in-out;
+}
+
+.input:hover {
+  border: 1px solid rgb(235, 235, 235);
+  -webkit-box-shadow: inset 0px 1px 4px 0px rgba(5, 5, 5, 0.2);
+  box-shadow: inset 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+}
+
+.operador div {
+  display: inline-block;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 5px;
+  width: 80px;
+  text-align: center;
+  padding: 10px;
+  margin: 20px 4px 10px 0;
+  cursor: pointer;
+  background-color: #969189;
+  transition: border-color .2s ease-in-out, background-color .2s, box-shadow .2s;
+}
+
+.operador div:hover {
+  background-color: #464443;
+  -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+  border-color: rgb(0, 0, 0);
+}
+
+.operador div:active {
+  font-weight: bold;
+}
+
+.leftPanel {
+  display: inline-block;
+}
+
+.numeros div {
+  display: inline-block;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 1px;
+  width: 80px;
+  text-align: center;
+  padding: 10px;
+  margin: 10px 4px 10px 0;
+  cursor: pointer;
+  background-color: #f9f9f9;
+  transition: border-color .2s ease-in-out, background-color .2s, box-shadow .2s;
+}
+
+.numeros div:hover {
+  background-color: #f1f1f1;
+  -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+  border-color: #bbb;
+}
+
+.numeros div:active {
+  font-weight: bold;
+}
+
+div.equal {
+  display: inline-block;
+  border: 1px solid rgb(29, 15, 15);
+  border-radius: 1px;
+  width: 17%;
+  text-align: center;
+  padding: 4.27em 10px;
+  margin: 10px 6px 10px 0;
+  vertical-align: top;
+  cursor: pointer;
+  color: #000;
+  background-color: #e48d0a;
+  transition: all .2s ease-in-out;
+}
+
+div.equal:hover {
+  background-color: #e29725;
+  -webkit-box-shadow: 0px 1px 4px 0px rgba(236, 174, 4, 0.932);
+}
+
+div.equal:active {
+  font-weight: bold;
+}
